@@ -1,0 +1,10 @@
++======================+======================+======================================+
+| Launch Setup Clock   | Launch Hold Clock    | Pin                                  |
++======================+======================+======================================+
+| clk_out1_clk_wiz_0_1 | clk_out1_clk_wiz_0_1 | Command_Unit/tx_data_reg[1]/D        |
+| clk_out1_clk_wiz_0_1 | clk_out1_clk_wiz_0_1 | Command_Unit/Result_display_reg[3]/D |
+| clk_out1_clk_wiz_0_1 | clk_out1_clk_wiz_0_1 | Command_Unit/tx_data_reg[0]/D        |
+| clk_out1_clk_wiz_0_1 | clk_out1_clk_wiz_0_1 | Command_Unit/Result_display_reg[7]/D |
+| clk_out1_clk_wiz_0_1 | clk_out1_clk_wiz_0_1 | Command_Unit/tx_data_reg[4]/D        |
+| clk_out1_clk_wiz_0_1 | clk_out1_clk_wiz_0_1 | Command_Unit/Result_display_reg[6]/D |
++----------------------+----------------------+--------------------------------------+

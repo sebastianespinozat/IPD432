@@ -1,0 +1,405 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Jan  8 21:26:42 2023
+# Process ID: 6052
+# Current directory: C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.runs/synth_1
+# Command line: vivado.exe -log Main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
+# Log file: C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.runs/synth_1/Main.vds
+# Journal file: C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.runs/synth_1\vivado.jou
+# Running On: DESKTOP-01L3MR9, OS: Windows, CPU Frequency: 2495 MHz, CPU Physical cores: 4, Host memory: 8224 MB
+#-----------------------------------------------------------
+source Main.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1281.703 ; gain = 23.906
+Command: read_checkpoint -auto_incremental -incremental C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/utils_1/imports/synth_1/Main.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/utils_1/imports/synth_1/Main.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Main -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7484
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1281.703 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Main' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/new/Main.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.runs/synth_1/.Xil/Vivado-6052-DESKTOP-01L3MR9/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.runs/synth_1/.Xil/Vivado-6052-DESKTOP-01L3MR9/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'uart_basic' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/_UART/uart_basic.v:23]
+	Parameter CLK_FREQUENCY bound to: 35000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_baud_tick_gen' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/_UART/uart_baud_tick_gen.v:23]
+	Parameter CLK_FREQUENCY bound to: 35000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter OVERSAMPLING bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_baud_tick_gen' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/_UART/uart_baud_tick_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/_UART/uart_rx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_sync' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/_UART/data_sync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_sync' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/_UART/data_sync.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/_UART/uart_rx.v:91]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/_UART/uart_rx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_baud_tick_gen__parameterized0' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/_UART/uart_baud_tick_gen.v:23]
+	Parameter CLK_FREQUENCY bound to: 35000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter OVERSAMPLING bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_baud_tick_gen__parameterized0' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/_UART/uart_baud_tick_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/_UART/uart_tx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/_UART/uart_tx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'uart_basic' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/_UART/uart_basic.v:23]
+INFO: [Synth 8-6157] synthesizing module 'UART_RX_LOGIC' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/new/UART_RX_LOGIC.sv:23]
+	Parameter NINPUTS bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/new/UART_RX_LOGIC.sv:162]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/new/UART_RX_LOGIC.sv:146]
+INFO: [Synth 8-6155] done synthesizing module 'UART_RX_LOGIC' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/new/UART_RX_LOGIC.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Command_Decoder' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/new/Command_Decoder.sv:23]
+	Parameter NINPUTS bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/new/Command_Decoder.sv:149]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/new/Command_Decoder.sv:140]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/new/ALU.sv:23]
+	Parameter NINPUTS bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/new/ALU.sv:71]
+INFO: [Synth 8-6157] synthesizing module 'adder_tree' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/new/adder_tree.sv:23]
+	Parameter NINPUTS bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder_tree' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/new/adder_tree.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/new/ALU.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Display_logic' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/new/Display_logic.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'num2digit' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/Codigo de display/num2digit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'num2digit' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/Codigo de display/num2digit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'BCD_2_7S' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/Codigo de display/BCD_2_7S.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'BCD_2_7S' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/Codigo de display/BCD_2_7S.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'CLK_DIVIDER' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/Codigo de display/CLK_DIVIDER.sv:23]
+	Parameter f bound to: 640 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CLK_DIVIDER' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/Codigo de display/CLK_DIVIDER.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/Codigo de display/counter.sv:23]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/Codigo de display/counter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'changeDisplay' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/Codigo de display/changeDisplay.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'changeDisplay' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/Codigo de display/changeDisplay.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'seggs' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/Codigo de display/seggs.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'seggs' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/Codigo de display/seggs.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Display_logic' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/new/Display_logic.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Command_Decoder' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/new/Command_Decoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'MemoryBlock_Vector' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/new/MemoryBlock_Vector.sv:23]
+	Parameter NINPUTS bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MemoryBlock_Vector' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/new/MemoryBlock_Vector.sv:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/new/Main.sv:151]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.runs/synth_1/.Xil/Vivado-6052-DESKTOP-01L3MR9/realtime/ila_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.runs/synth_1/.Xil/Vivado-6052-DESKTOP-01L3MR9/realtime/ila_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Main' (0#1) [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/new/Main.sv:23]
+WARNING: [Synth 8-6014] Unused sequential element flag_delay_1_cicle_reg was removed.  [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/new/UART_RX_LOGIC.sv:79]
+WARNING: [Synth 8-6014] Unused sequential element delay_result_reg was removed.  [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/imports/new/Command_Decoder.sv:79]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'your_instance_name'. This will prevent further optimization [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/new/Main.sv:151]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'UART'. This will prevent further optimization [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/new/Main.sv:69]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'Command_Unit'. This will prevent further optimization [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/sources_1/imports/sources_1/new/Main.sv:115]
+WARNING: [Synth 8-7129] Port reset in module ALU is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1302.453 ; gain = 20.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1302.453 ; gain = 20.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1302.453 ; gain = 20.750
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.142 . Memory (MB): peak = 1302.453 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'inst'
+Parsing XDC File [c:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'your_instance_name'
+Finished Parsing XDC File [c:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'your_instance_name'
+Parsing XDC File [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/constrs_1/imports/Digitales/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/constrs_1/imports/Digitales/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.srcs/constrs_1/imports/Digitales/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1390.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 1390.148 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:46 . Memory (MB): peak = 1390.148 ; gain = 108.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:46 . Memory (MB): peak = 1390.148 ; gain = 108.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for your_instance_name. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:46 . Memory (MB): peak = 1390.148 ; gain = 108.445
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UART_RX_LOGIC'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Command_Decoder'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RX_IDLE |                              000 |                              000
+                RX_START |                              001 |                              001
+                 RX_RECV |                              010 |                              010
+                 RX_STOP |                              011 |                              011
+                RX_READY |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 TX_IDLE |                               00 |                               00
+                TX_START |                               01 |                               01
+                 TX_SEND |                               10 |                               10
+                 TX_STOP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+           WAIT_FUNCTION |                              000 |                              000
+      CHOOSE_INSTRUCTION |                              001 |                              001
+              N_LSB_VECT |                              010 |                              010
+              N_MSB_VECT |                              011 |                              011
+              WORD_OF_FF |                              100 |                              100
+          COMAND_DECODER |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'UART_RX_LOGIC'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             Mux_command |                              000 |                              000
+           N_LSB_ELEM_TX |                              001 |                              001
+           N_MSB_ELEM_TX |                              010 |                              010
+       Send_Component_TX |                              011 |                              100
+                 ReadVec |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Command_Decoder'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:54 . Memory (MB): peak = 1390.148 ; gain = 108.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   18 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 3     
+	   2 Input   12 Bit       Adders := 4     
+	   2 Input   11 Bit       Adders := 8     
+	   2 Input   10 Bit       Adders := 16    
+	   2 Input    9 Bit       Adders := 32    
+	   2 Input    8 Bit       Adders := 64    
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               18 Bit    Registers := 2     
+	               13 Bit    Registers := 63    
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 70    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 1     
+	   5 Input   32 Bit        Muxes := 1     
+	   4 Input   13 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 127   
+	   6 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 137   
+	   4 Input    8 Bit        Muxes := 66    
+	   8 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 2     
+	   5 Input    5 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   4 Input    3 Bit        Muxes := 5     
+	   5 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 12    
+	   6 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 2     
+	  30 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 6     
+	   4 Input    2 Bit        Muxes := 2     
+	   6 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 81    
+	   3 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 13    
+	   5 Input    1 Bit        Muxes := 10    
+	   6 Input    1 Bit        Muxes := 18    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port reset in module ALU is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:01:46 . Memory (MB): peak = 1453.637 ; gain = 171.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:35 ; elapsed = 00:01:58 . Memory (MB): peak = 1461.164 ; gain = 179.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:47 ; elapsed = 00:02:11 . Memory (MB): peak = 1486.906 ; gain = 205.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:50 ; elapsed = 00:02:17 . Memory (MB): peak = 1486.906 ; gain = 205.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:59 ; elapsed = 00:02:25 . Memory (MB): peak = 1486.906 ; gain = 205.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:59 ; elapsed = 00:02:25 . Memory (MB): peak = 1486.906 ; gain = 205.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:00 ; elapsed = 00:02:27 . Memory (MB): peak = 1486.906 ; gain = 205.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:00 ; elapsed = 00:02:27 . Memory (MB): peak = 1486.906 ; gain = 205.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:00 ; elapsed = 00:02:27 . Memory (MB): peak = 1486.906 ; gain = 205.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:00 ; elapsed = 00:02:27 . Memory (MB): peak = 1486.906 ; gain = 205.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |clk_wiz |     1|
+|2     |ila     |     1|
+|3     |CARRY4  |   640|
+|4     |LUT1    |    88|
+|5     |LUT2    |   803|
+|6     |LUT3    |   551|
+|7     |LUT4    |   795|
+|8     |LUT5    |   411|
+|9     |LUT6    |  1466|
+|10    |MUXF7   |   107|
+|11    |MUXF8   |    31|
+|12    |FDRE    |   782|
+|13    |FDSE    |     7|
+|14    |IBUF    |     2|
+|15    |OBUF    |    16|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:00 ; elapsed = 00:02:27 . Memory (MB): peak = 1486.906 ; gain = 205.203
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:38 ; elapsed = 00:02:15 . Memory (MB): peak = 1486.906 ; gain = 117.508
+Synthesis Optimization Complete : Time (s): cpu = 00:02:00 ; elapsed = 00:02:27 . Memory (MB): peak = 1486.906 ; gain = 205.203
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 1486.906 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 778 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1486.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: bae75cd2
+INFO: [Common 17-83] Releasing license: Synthesis
+80 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:10 ; elapsed = 00:02:42 . Memory (MB): peak = 1486.906 ; gain = 205.203
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.runs/synth_1/Main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Main_utilization_synth.rpt -pb Main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jan  8 21:29:56 2023...

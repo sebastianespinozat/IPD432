@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Jan  8 21:30:11 2023
+# Process ID: 11876
+# Current directory: C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.runs/impl_1
+# Command line: vivado.exe -log Main.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Main.tcl -notrace
+# Log file: C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.runs/impl_1/Main.vdi
+# Journal file: C:/USM-2022-2/SuperDigitales/IPD432_Carrasco_Espinoza/Tarea3/DEBUG/COMBINATIONAL/COMBINATIONAL.runs/impl_1\vivado.jou
+# Running On: DESKTOP-01L3MR9, OS: Windows, CPU Frequency: 2495 MHz, CPU Physical cores: 4, Host memory: 8224 MB
+#-----------------------------------------------------------
+source Main.tcl -notrace
